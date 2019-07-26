@@ -1,0 +1,30 @@
+import random
+
+user = input('Rock, paper, or scissors: ')
+computer = random.randint(1, 3)
+
+if computer == 1:
+    computer = "r"
+elif computer == 2:
+    computer = "p"
+else:
+    computer = "s"
+
+if user == 'r' and computer == 'r':
+    print("Rock vs. Rock, draw!")
+elif user == 'r' and computer == 'p':
+    print("Rock vs. Paper, computer wins!")
+elif user == 'r' and computer == 's':
+    print("Rock vs. Scissors, user wins!")
+elif user == 'p' and computer == 'p':
+    print("Paper vs. Paper, draw!")
+elif user == 'p' and computer == 'r':
+    print("Paper vs. Rock, user wins!")
+elif user == 'p' and computer == 's':
+    print("Paper vs. Scissors, computer wins!")
+elif user == 's' and computer == 's':
+    print("Scissors vs. Scissors, draw!")
+elif user == 's' and computer == 'r':
+    print("Scissors vs. Rock, computer wins!")
+elif user == 's' and computer == 'p':
+    print("Scissors vs. Paper, user wins!")
